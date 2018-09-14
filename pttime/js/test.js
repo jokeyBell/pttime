@@ -57,9 +57,9 @@ var methods={
         oDiv.innerHTML='<img src="'+main+'load.gif">';
         document.body.appendChild(oDiv);
 
-        var oDiv=document.getElementById('offline-div');
-        if(oDiv){
-            document.body.removeChild(oDiv);
+        var oDiv1=document.getElementById('offline-div');
+        if(oDiv1){
+            document.body.removeChild(oDiv1);
         } 
     },
     initMain:function(){
