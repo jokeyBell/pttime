@@ -52,7 +52,8 @@ var methods={
         document.body.appendChild(oDiv);
     },
     removeOffline:function (){
-        document.body.style="display:none";
+        var oApp=document.getElementById('app');
+        oApp.style.display="none";
         var oDiv=document.getElementById('offline-div');
         if(oDiv){
             document.body.removeChild(oDiv);
