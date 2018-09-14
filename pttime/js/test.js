@@ -47,7 +47,7 @@ var methods={
     getOffLine:function (){
         var oDiv=document.createElement('div');
         oDiv.id='offline-div'
-        oDiv.innerHTML='<img src="./dist/static/images/sigo.png"><p>network failure</p><button>retry</button>';
+        oDiv.innerHTML='<img src="./static/images/sigo.png"><p>network failure</p><button>retry</button>';
         document.body.appendChild(oDiv);
     },
     removeOffline:function (){
