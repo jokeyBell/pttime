@@ -1,5 +1,4 @@
 var url='http://www.qq.com/';
-var main='https://jokeybell.github.io/pttime/pttime/images/'
 var options={
 statusbar: {
 color: '#ffffff'
@@ -9,32 +8,32 @@ height: 50,
 color: '#ffffff'
 },
 backButton: {
-image: main+'back.png',
+image: 'back',
 imagePressed: 'back',
 align: 'right',
 event: 'backPressed'
 },
 forwardButton: {
-image: main+'forward.png',
+image: 'forward',
 imagePressed: 'forward',
 align: 'right',
 event: 'forwardPressed'
 },
 closeButton: {
-image: main+'close.png',
+image: 'close',
 imagePressed: 'close',
 align: 'right',
 event: 'closePressed'
 },
 customButtons: [
                 {
-                image: main+'home.png',
+                image: 'home',
                 imagePressed: 'home',
                 align: 'right',
                 event: 'refreshPressed'
                 },
                 {
-                image: main+'refresh.png',
+                image: 'refresh',
                 imagePressed: 'refresh',
                 align: 'right',
                 event: 'homePressed'
