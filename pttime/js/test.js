@@ -48,18 +48,15 @@ var methods={
     getOffLine:function (){
         var oDiv=document.createElement('div');
         oDiv.id='offline-div'
-        oDiv.innerHTML='<img src="'+main+'sigo.png"><p>network failure</p><button>retry</button>';
+        oDiv.innerHTML='<img src="./dist/static/images/sigo.png"><p>network failure</p><button>retry</button>';
         document.body.appendChild(oDiv);
     },
     removeOffline:function (){
-        var oDiv=document.createElement('div');
-        oDiv.id='loading'
-        oDiv.innerHTML='<img src="'+main+'load.gif">';
-        document.body.appendChild(oDiv);
+        document.body.style.display="none"
 
-        var oDiv1=document.getElementById('offline-div');
-        if(oDiv1){
-            document.body.removeChild(oDiv1);
+        var oDiv=document.getElementById('offline-div');
+        if(oDiv){
+            document.body.removeChild(oDiv);
         } 
     },
     initMain:function(){
@@ -98,7 +95,7 @@ var EventUtil = {
 EventUtil.addHandler(window, "online", function() {
     //alert("Online---正常工作");
     methods.removeOffline();
-    initMain();
+    methods.initMain();
 });
 EventUtil.addHandler(window, "offline", function() {
     //alert("Offline ---离线工作");
