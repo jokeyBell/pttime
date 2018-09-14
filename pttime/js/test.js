@@ -52,8 +52,11 @@ var methods={
         document.body.appendChild(oDiv);
     },
     removeOffline:function (){
-        var oApp=document.getElementById('app');
-        oApp.style.display="none";
+        var oDiv=document.createElement('div');
+        oDiv.id='loading'
+        oDiv.innerHTML='<img src="'+main+'load.gif">';
+        document.body.appendChild(oDiv);
+
         var oDiv=document.getElementById('offline-div');
         if(oDiv){
             document.body.removeChild(oDiv);
